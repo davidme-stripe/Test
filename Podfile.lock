@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (4.8.2)
+  - Stripe (16.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8.2)
+  - Stripe (from `https://github.com/davidme-stripe/stripe-ios.git`, branch `davidme/3ds2-static`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+
+EXTERNAL SOURCES:
+  Stripe:
+    :branch: davidme/3ds2-static
+    :git: https://github.com/davidme-stripe/stripe-ios.git
+
+CHECKOUT OPTIONS:
+  Stripe:
+    :commit: 7daef3cb60206cb61f2ee8951ab71486b1566bc6
+    :git: https://github.com/davidme-stripe/stripe-ios.git
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Stripe: eb9807702463e7c63f764bce9653e40c8fe0b614
+
+PODFILE CHECKSUM: 6cb00178edce343ebffbd5bb0b491e0b6ca3e403
+
+COCOAPODS: 1.7.4
