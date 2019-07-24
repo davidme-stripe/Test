@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,16 @@
 		B61C995722B9B5E6004980FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61C995522B9B5E6004980FD /* Main.storyboard */; };
 		B61C995922B9B5E6004980FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B61C995822B9B5E6004980FD /* Assets.xcassets */; };
 		B61C995C22B9B5E6004980FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61C995A22B9B5E6004980FD /* LaunchScreen.storyboard */; };
+		B677C17F22E77B12004AFFDA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677C17522E77B11004AFFDA /* SettingsViewController.swift */; };
+		B677C18022E77B12004AFFDA /* MyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677C17622E77B12004AFFDA /* MyAPIClient.swift */; };
+		B677C18122E77B12004AFFDA /* BrowseProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677C17722E77B12004AFFDA /* BrowseProductsViewController.swift */; };
+		B677C18222E77B12004AFFDA /* UIColor+Stripe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677C17822E77B12004AFFDA /* UIColor+Stripe.swift */; };
+		B677C18322E77B12004AFFDA /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677C17922E77B12004AFFDA /* Buttons.swift */; };
+		B677C18422E77B12004AFFDA /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677C17A22E77B12004AFFDA /* CheckoutViewController.swift */; };
+		B677C18522E77B12004AFFDA /* CheckoutRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677C17B22E77B12004AFFDA /* CheckoutRowView.swift */; };
+		B677C18622E77B12004AFFDA /* EmojiCheckoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677C17C22E77B12004AFFDA /* EmojiCheckoutCell.swift */; };
+		B677C18722E77B12004AFFDA /* PaymentContextFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677C17D22E77B12004AFFDA /* PaymentContextFooterView.swift */; };
+		B677C18822E77B12004AFFDA /* EmojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677C17E22E77B12004AFFDA /* EmojiCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,16 @@
 		B61C995822B9B5E6004980FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B61C995B22B9B5E6004980FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B61C995D22B9B5E6004980FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B677C17522E77B11004AFFDA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B677C17622E77B12004AFFDA /* MyAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAPIClient.swift; sourceTree = "<group>"; };
+		B677C17722E77B12004AFFDA /* BrowseProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseProductsViewController.swift; sourceTree = "<group>"; };
+		B677C17822E77B12004AFFDA /* UIColor+Stripe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Stripe.swift"; sourceTree = "<group>"; };
+		B677C17922E77B12004AFFDA /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		B677C17A22E77B12004AFFDA /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		B677C17B22E77B12004AFFDA /* CheckoutRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutRowView.swift; sourceTree = "<group>"; };
+		B677C17C22E77B12004AFFDA /* EmojiCheckoutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiCheckoutCell.swift; sourceTree = "<group>"; };
+		B677C17D22E77B12004AFFDA /* PaymentContextFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentContextFooterView.swift; sourceTree = "<group>"; };
+		B677C17E22E77B12004AFFDA /* EmojiCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,16 @@
 		B61C995022B9B5E6004980FD /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				B677C17722E77B12004AFFDA /* BrowseProductsViewController.swift */,
+				B677C17922E77B12004AFFDA /* Buttons.swift */,
+				B677C17B22E77B12004AFFDA /* CheckoutRowView.swift */,
+				B677C17A22E77B12004AFFDA /* CheckoutViewController.swift */,
+				B677C17E22E77B12004AFFDA /* EmojiCell.swift */,
+				B677C17C22E77B12004AFFDA /* EmojiCheckoutCell.swift */,
+				B677C17622E77B12004AFFDA /* MyAPIClient.swift */,
+				B677C17D22E77B12004AFFDA /* PaymentContextFooterView.swift */,
+				B677C17522E77B11004AFFDA /* SettingsViewController.swift */,
+				B677C17822E77B12004AFFDA /* UIColor+Stripe.swift */,
 				B61C995122B9B5E6004980FD /* AppDelegate.swift */,
 				B61C995322B9B5E6004980FD /* ViewController.swift */,
 				B61C995522B9B5E6004980FD /* Main.storyboard */,
@@ -135,8 +165,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B677C18322E77B12004AFFDA /* Buttons.swift in Sources */,
+				B677C18522E77B12004AFFDA /* CheckoutRowView.swift in Sources */,
 				B61C995422B9B5E6004980FD /* ViewController.swift in Sources */,
 				B61C995222B9B5E6004980FD /* AppDelegate.swift in Sources */,
+				B677C18622E77B12004AFFDA /* EmojiCheckoutCell.swift in Sources */,
+				B677C17F22E77B12004AFFDA /* SettingsViewController.swift in Sources */,
+				B677C18822E77B12004AFFDA /* EmojiCell.swift in Sources */,
+				B677C18422E77B12004AFFDA /* CheckoutViewController.swift in Sources */,
+				B677C18022E77B12004AFFDA /* MyAPIClient.swift in Sources */,
+				B677C18222E77B12004AFFDA /* UIColor+Stripe.swift in Sources */,
+				B677C18122E77B12004AFFDA /* BrowseProductsViewController.swift in Sources */,
+				B677C18722E77B12004AFFDA /* PaymentContextFooterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
