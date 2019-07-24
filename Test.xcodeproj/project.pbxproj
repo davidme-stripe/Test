@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		319A60A322E91DFD00AACF66 /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319A60A222E91DFD00AACF66 /* Stripe.framework */; };
+		319A60A622E920DC00AACF66 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319A60A522E920DC00AACF66 /* Alamofire.framework */; };
 		B61C995222B9B5E6004980FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61C995122B9B5E6004980FD /* AppDelegate.swift */; };
 		B61C995422B9B5E6004980FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61C995322B9B5E6004980FD /* ViewController.swift */; };
 		B61C995722B9B5E6004980FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61C995522B9B5E6004980FD /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		319A60A222E91DFD00AACF66 /* Stripe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stripe.framework; path = Carthage/Build/iOS/Stripe.framework; sourceTree = "<group>"; };
+		319A60A522E920DC00AACF66 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		B61C994E22B9B5E6004980FD /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B61C995122B9B5E6004980FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B61C995322B9B5E6004980FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,17 +53,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				319A60A322E91DFD00AACF66 /* Stripe.framework in Frameworks */,
+				319A60A622E920DC00AACF66 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		319A60A122E91DFD00AACF66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				319A60A522E920DC00AACF66 /* Alamofire.framework */,
+				319A60A222E91DFD00AACF66 /* Stripe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B61C994522B9B5E6004980FD = {
 			isa = PBXGroup;
 			children = (
 				B61C995022B9B5E6004980FD /* Test */,
 				B61C994F22B9B5E6004980FD /* Products */,
+				319A60A122E91DFD00AACF66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +120,7 @@
 				B61C994A22B9B5E6004980FD /* Sources */,
 				B61C994B22B9B5E6004980FD /* Frameworks */,
 				B61C994C22B9B5E6004980FD /* Resources */,
+				319A60A422E91E0900AACF66 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -159,6 +176,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		319A60A422E91E0900AACF66 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/input.xcfilelist",
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+				"$(SRCROOT)/output.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B61C994A22B9B5E6004980FD /* Sources */ = {
@@ -323,6 +362,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FN3AN9CHDF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -340,6 +384,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FN3AN9CHDF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
