@@ -14,27 +14,37 @@ FOUNDATION_EXPORT double Stripe3DS2VersionNumber;
 //! Project version string for Stripe3DS2.
 FOUNDATION_EXPORT const unsigned char Stripe3DS2VersionString[];
 
-#import <Stripe/STDSConfigParameters.h>
-#import <Stripe/STDSThreeDS2Service.h>
-#import <Stripe/STDSUICustomization.h>
-#import <Stripe/STDSWarning.h>
+#import "STDSConfigParameters.h"
+#import "STDSThreeDS2Service.h"
+#import "STDSUICustomization.h"
+#import "STDSWarning.h"
 
-#import <Stripe/STDSAlreadyInitializedException.h>
-#import <Stripe/STDSInvalidInputException.h>
-#import <Stripe/STDSNotInitializedException.h>
-#import <Stripe/STDSRuntimeException.h>
+#import "STDSAlreadyInitializedException.h"
+#import "STDSInvalidInputException.h"
+#import "STDSNotInitializedException.h"
+#import "STDSRuntimeException.h"
 
-#import <Stripe/STDSErrorMessage.h>
-#import <Stripe/STDSProtocolErrorEvent.h>
-#import <Stripe/STDSRuntimeErrorEvent.h>
-#import <Stripe/STDSStripe3DS2Error.h>
-#import <Stripe/STDSThreeDSProtocolVersion.h>
+#import "STDSErrorMessage.h"
+#import "STDSProtocolErrorEvent.h"
+#import "STDSRuntimeErrorEvent.h"
+#import "STDSStripe3DS2Error.h"
+#import "STDSThreeDSProtocolVersion.h"
 
-#import <Stripe/STDSAuthenticationRequestParameters.h>
-#import <Stripe/STDSAuthenticationResponse.h>
-#import <Stripe/STDSChallengeParameters.h>
-#import <Stripe/STDSChallengeStatusReceiver.h>
-#import <Stripe/STDSCompletionEvent.h>
-#import <Stripe/STDSJSONDecodable.h>
-#import <Stripe/STDSJSONEncoder.h>
-#import <Stripe/STDSTransaction.h>
+#import "STDSAuthenticationRequestParameters.h"
+#import "STDSAuthenticationResponse.h"
+#import "STDSChallengeParameters.h"
+#import "STDSChallengeStatusReceiver.h"
+#import "STDSCompletionEvent.h"
+#import "STDSJSONDecodable.h"
+#import "STDSJSONEncoder.h"
+#import "STDSTransaction.h"
+
+#import "STDSButtonCustomization.h"
+#import "STDSCustomization.h"
+#import "STDSException.h"
+#import "STDSFooterCustomization.h"
+#import "STDSJSONEncodable.h"
+#import "STDSLabelCustomization.h"
+#import "STDSNavigationBarCustomization.h"
+#import "STDSSelectionCustomization.h"
+#import "STDSTextFieldCustomization.h"
